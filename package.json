@@ -11,7 +11,7 @@
     "dev": "concurrently -n server,client -c blue,green \"npm run dev -w server\" \"npm run dev -w client\"",
     "dev:server": "npm run dev -w server",
     "dev:client": "npm run dev -w client",
-    "migrate": "npm run migrate -w server",
+    "migrate": "npm run migrate -w server --",
     "seed": "npm run seed -w server",
     "build": "npm run build -w client",
     "start": "npm run start -w server"
