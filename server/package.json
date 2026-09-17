@@ -1,0 +1,25 @@
+{
+  "name": "@callhand/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch --env-file=../.env src/index.js",
+    "start": "node --env-file=../.env src/index.js",
+    "migrate": "node --env-file=../.env src/db/migrate.js",
+    "seed": "node --env-file=../.env src/scripts/seed.js"
+  },
+  "dependencies": {
+    "@vapi-ai/server-sdk": "^0.10.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.13.1",
+    "pino": "^9.6.0",
+    "pino-http": "^10.4.0",
+    "twilio": "^5.4.3",
+    "zod": "^3.24.1"
+  }
+}
